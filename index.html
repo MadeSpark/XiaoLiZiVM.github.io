@@ -1,0 +1,252 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>小栗子虚拟机 - 兼容小栗子生态插件</title>
+    <meta
+      name="description"
+      content="小栗子虚拟机通过 WebSocket 对接兼容萌尘 / Dulu / OneBot V11，让用户在非小栗子框架下继续使用小栗子生态插件。"
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="icon" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <meta property="og:title" content="小栗子虚拟机 - 兼容小栗子生态插件" />
+    <meta
+      property="og:description"
+      content="通过 WebSocket 对接兼容萌尘 / Dulu / OneBot V11，延续小栗子生态插件。"
+    />
+    <meta property="og:image" content="./icon.png" />
+    <meta property="og:type" content="website" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="./">
+          <img class="brand__icon" src="./icon.png" alt="小栗子虚拟机" />
+          <span class="brand__name">小栗子虚拟机</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <button class="nav__btn" type="button" id="themeToggle" aria-pressed="false">暗色</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="badge">兼容计划 · API 持续更新中</p>
+            <h1 class="hero__title">延续小栗子生态插件的可用性</h1>
+            <p class="hero__subtitle">
+              小栗子虚拟机通过 WebSocket 对接方式，兼容市面上稳定的萌尘框架以及 OneBot V11 标准，让你在非小栗子框架下继续使用原先的小栗子生态插件。
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--ghost" href="https://wwasq.lanzouv.com/b0fq8heqh" target="_blank" rel="noreferrer" data-download>
+                下载虚拟机
+              </a>
+              <a class="btn btn--ghost" href="#sdk-download">下载SDK</a>
+            </div>
+            <p class="hero__note">
+              小栗子虚拟机QQ交流群：936632212。
+            </p>
+            <p class="hero__note hero__note--important">
+              我们反对将技术用于违法犯罪用途。请在遵守法律法规与平台规则的前提下使用。
+            </p>
+          </div>
+          <div class="hero__card" role="presentation">
+            <div class="stat">
+              <div class="stat__k">兼容</div>
+              <div class="stat__v">萌尘 / Dulu / OneBot V11</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">生态</div>
+              <div class="stat__v">小栗子插件可继续运行</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">SDK</div>
+              <div class="stat__v">易语言 / C++ / Python（持续完善）</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="intro">
+        <div class="container">
+          <h2 class="section__title">项目背景</h2>
+          <div class="grid grid--2">
+            <div class="card card--plain">
+              <h3 class="card__title">小栗子框架</h3>
+              <p class="card__text">
+                小栗子框架曾是生态非常完善的 QQ 机器人框架之一，拥有丰富的插件与 SDK。遗憾的是，因为被犯罪团队滥用，项目逐渐停摆，生态延续面临挑战。
+              </p>
+            </div>
+            <div class="card card--plain">
+              <h3 class="card__title">小栗子虚拟机</h3>
+              <p class="card__text">
+                本项目以"兼容与迁移"为核心目标：通过 ws 对接的方式，将原有小栗子生态的插件能力接入更稳定且广泛使用的框架与标准（萌尘 / Dulu / OneBot V11），让历史插件资产可以被继续使用与维护。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <h2 class="section__title">核心特性</h2>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3 class="card__title">WebSocket 对接</h3>
+              <p class="card__text">以 ws 作为对接通道，降低不同框架之间的耦合，便于部署与拓展。</p>
+            </div>
+            <div class="card">
+              <h3 class="card__title">OneBot V11 兼容</h3>
+              <p class="card__text">对接 OneBot V11 标准接口，减少重复造轮子，提升生态适配能力。</p>
+            </div>
+            <div class="card">
+              <h3 class="card__title">SDK 持续更新</h3>
+              <p class="card__text">在原易语言 SDK 之外，提供 C++ 与 Python 版本 SDK，并持续补齐与更新 API。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="download">
+        <div class="container">
+          <h2 class="section__title" id="sdk-download">SDK 下载</h2>
+          <div class="grid grid--3">
+            <div class="card card--download">
+              <div class="card__top">
+                <h3 class="card__title">易语言 SDK</h3>
+                <p class="card__text">适合原小栗子生态用户快速迁移与继续维护现有插件。</p>
+              </div>
+              <div class="card__actions">
+                <a
+                  class="btn btn--ghost"
+                  href="https://wwasq.lanzouv.com/i6kde3kc4z6b"
+                  target="_blank"
+                  rel="noreferrer"
+                  >前往下载</a
+                >
+                <button class="btn btn--ghost" type="button" data-copy="https://wwasq.lanzouv.com/i6kde3kc4z6b">
+                  复制链接
+                </button>
+              </div>
+            </div>
+            <div class="card card--download">
+              <div class="card__top">
+                <h3 class="card__title">C++ SDK</h3>
+                <p class="card__text">面向更广泛的开发者与工程化场景，便于跨项目复用与集成。</p>
+              </div>
+              <div class="card__actions">
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/MadeSpark/XiaoLiZiVM_CppSDK"
+                  target="_blank"
+                  rel="noreferrer"
+                  >打开仓库</a
+                >
+                <button class="btn btn--ghost" type="button" data-copy="https://github.com/MadeSpark/XiaoLiZiVM_CppSDK">
+                  复制链接
+                </button>
+              </div>
+            </div>
+            <div class="card card--download">
+              <div class="card__top">
+                <h3 class="card__title">Python SDK</h3>
+                <p class="card__text">面向 Python 开发者，快速对接小栗子虚拟机 API，支持异步与同步调用。</p>
+              </div>
+              <div class="card__actions">
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/MadeSpark/XiaoLiZiVM_PythonSDK"
+                  target="_blank"
+                  rel="noreferrer"
+                  >打开仓库</a
+                >
+                <button class="btn btn--ghost" type="button" data-copy="https://github.com/MadeSpark/XiaoLiZiVM_PythonSDK">
+                  复制链接
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hint">
+            <div class="hint__title">提示</div>
+            <div class="hint__text">SDK 与 API 仍在持续更新中，欢迎关注仓库与发布说明。</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="links">
+        <div class="container">
+          <h2 class="section__title">相关链接</h2>
+          <div class="grid grid--3">
+            <a class="card card--link" href="./xiaolz_clone/index.html">
+              <div class="card__title">小栗子框架原官网</div>
+              <div class="card__text">本地克隆备份（静态快照）。</div>
+              <div class="card__meta">xiaolz_clone/index.html</div>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/MadeSpark/XiaoLiZiVM_CppSDK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="card__title">C++ SDK 源码</div>
+              <div class="card__text">API 列表与示例见仓库文档。</div>
+              <div class="card__meta">GitHub</div>
+            </a>
+            <a
+              class="card card--link"
+              href="https://github.com/MadeSpark/XiaoLiZiVM_PythonSDK"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="card__title">Python SDK 源码</div>
+              <div class="card__text">面向 Python 开发者，支持异步与同步调用。</div>
+              <div class="card__meta">GitHub</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img class="footer__icon" src="./icon.png" alt="" />
+            <span>小栗子虚拟机</span>
+          </div>
+          <div class="footer__text">为延续小栗子生态而生 · 兼容与迁移优先</div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="#top">返回顶部</a>
+        </div>
+      </div>
+      <div class="container footer__build">版本标识：本网页于 2026 年 3 月 30 日 18:56 创建</div>
+    <div style="text-align:center;padding:15px 0;font-size:14px">我们都还没来得及说再见，所以...我不会把它当作离别 - To:XiaoLiZi</div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <div class="toast__inner" id="toastText"></div>
+    </div>
+
+    <div class="modal" id="downloadModal" hidden>
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="downloadTitle" tabindex="-1">
+        <div class="modal__title" id="downloadTitle">下载提示</div>
+        <div class="modal__text">下载前请确认密码：gk0t</div>
+        <div class="modal__actions">
+          <button class="btn btn--primary" type="button" id="downloadProceed">继续跳转</button>
+          <button class="btn btn--ghost" type="button" data-copy="gk0t">复制密码</button>
+          <button class="btn btn--ghost" type="button" data-modal-close>取消</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
