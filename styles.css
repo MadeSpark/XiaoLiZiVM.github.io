@@ -513,6 +513,67 @@ a {
   flex-wrap: wrap;
 }
 
+/* ── 主题切换圆形波纹动画 (View Transitions API) ────────────────── */
+
+/* 切换到暗色：新页面从圆心向外扩展 */
+.theme-to-dark::view-transition-new(root) {
+  animation: ripple-expand 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  clip-path: circle(0% at var(--ripple-x) var(--ripple-y));
+  z-index: 1;
+}
+.theme-to-dark::view-transition-old(root) {
+  animation: none;
+  z-index: 0;
+}
+
+/* 切换到明色：新页面从圆心向外扩展（与暗色完全对称） */
+.theme-to-light::view-transition-new(root) {
+  animation: ripple-expand 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  clip-path: circle(0% at var(--ripple-x) var(--ripple-y));
+  z-index: 1;
+}
+.theme-to-light::view-transition-old(root) {
+  animation: none;
+  z-index: 0;
+}
+
+@keyframes ripple-expand {
+  from { clip-path: circle(0% at var(--ripple-x) var(--ripple-y)); }
+  to   { clip-path: circle(var(--ripple-r) at var(--ripple-x) var(--ripple-y)); }
+}
+
+/* 通用：关闭默认的淡入淡出 */
+::view-transition-old(root),
+::view-transition-new(root) {
+  mix-blend-mode: normal;
+  animation-duration: 0.55s;
+}
+
+/* ── 主题切换按钮样式优化 ────────────────────────────────────────── */
+.nav__btn#themeToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.nav__btn#themeToggle:hover {
+  color: var(--text);
+  background: var(--panel-2);
+  border-color: rgba(124, 92, 255, 0.4);
+  box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.12);
+}
+.nav__btn#themeToggle svg {
+  flex-shrink: 0;
+}
+
 @media (max-width: 900px) {
   .hero__inner {
     grid-template-columns: 1fr;
