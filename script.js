@@ -2,10 +2,13 @@ const toastEl = document.querySelector(".toast");
 const toastTextEl = document.getElementById("toastText");
 const themeToggleEl = document.getElementById("themeToggle");
 const downloadModalEl = document.getElementById("downloadModal");
+const downloadPasswordTextEl = document.getElementById("downloadPasswordText");
+const downloadCopyPasswordEl = document.getElementById("downloadCopyPassword");
 const downloadProceedEl = document.getElementById("downloadProceed");
 
 let toastTimer = null;
 let pendingDownloadUrl = null;
+let pendingDownloadPassword = "gk0t";
 let themeAnimating = false;
 
 // Theme switch with circular ripple animation
@@ -86,9 +89,19 @@ async function copyText(text) {
 }
 
 // Download modal
-function openDownloadModal(url) {
+function openDownloadModal(url, password) {
   if (!downloadModalEl) return;
   pendingDownloadUrl = url;
+  pendingDownloadPassword = password || "";
+  if (downloadPasswordTextEl) {
+    downloadPasswordTextEl.textContent = pendingDownloadPassword
+      ? "下载前请确认密码：" + pendingDownloadPassword
+      : "下载前请确认链接无需密码。";
+  }
+  if (downloadCopyPasswordEl) {
+    downloadCopyPasswordEl.hidden = !pendingDownloadPassword;
+    downloadCopyPasswordEl.setAttribute("data-copy", pendingDownloadPassword);
+  }
   downloadModalEl.hidden = false;
   var panel = downloadModalEl.querySelector(".modal__panel");
   if (panel instanceof HTMLElement) panel.focus();
@@ -98,6 +111,7 @@ function closeDownloadModal() {
   if (!downloadModalEl) return;
   downloadModalEl.hidden = true;
   pendingDownloadUrl = null;
+  pendingDownloadPassword = "gk0t";
 }
 
 // Init theme: auto by time only (18:00~7:00 = dark), no localStorage
@@ -135,7 +149,8 @@ document.addEventListener("click", async function(e) {
 
   if (target.matches("[data-download]")) {
     var url = target.getAttribute("href");
-    if (url) { e.preventDefault(); openDownloadModal(url); }
+    var password = target.getAttribute("data-password") || "";
+    if (url) { e.preventDefault(); openDownloadModal(url, password); }
     return;
   }
 
