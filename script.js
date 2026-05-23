@@ -1,14 +1,8 @@
-const toastEl = document.querySelector(".toast");
+const toastEl = document.getElementById("copyToast");
 const toastTextEl = document.getElementById("toastText");
 const themeToggleEl = document.getElementById("themeToggle");
-const downloadModalEl = document.getElementById("downloadModal");
-const downloadPasswordTextEl = document.getElementById("downloadPasswordText");
-const downloadCopyPasswordEl = document.getElementById("downloadCopyPassword");
-const downloadProceedEl = document.getElementById("downloadProceed");
 
-let toastTimer = null;
-let pendingDownloadUrl = null;
-let pendingDownloadPassword = "gk0t";
+let toastInstance = null;
 let themeAnimating = false;
 
 // Theme switch with circular ripple animation
@@ -65,9 +59,17 @@ function setTheme(theme, animate, originX, originY) {
 function showToast(text) {
   if (!toastEl || !toastTextEl) return;
   toastTextEl.textContent = text;
+  if (!toastInstance && window.bootstrap && window.bootstrap.Toast) {
+    toastInstance = new window.bootstrap.Toast(toastEl);
+  }
+  if (toastInstance) {
+    toastInstance.show();
+    return;
+  }
   toastEl.hidden = false;
-  if (toastTimer) window.clearTimeout(toastTimer);
-  toastTimer = window.setTimeout(function() { toastEl.hidden = true; }, 1800);
+  window.setTimeout(function() {
+    toastEl.hidden = true;
+  }, 1800);
 }
 
 // Copy
@@ -88,32 +90,6 @@ async function copyText(text) {
   return ok;
 }
 
-// Download modal
-function openDownloadModal(url, password) {
-  if (!downloadModalEl) return;
-  pendingDownloadUrl = url;
-  pendingDownloadPassword = password || "";
-  if (downloadPasswordTextEl) {
-    downloadPasswordTextEl.textContent = pendingDownloadPassword
-      ? "下载前请确认密码：" + pendingDownloadPassword
-      : "下载前请确认链接无需密码。";
-  }
-  if (downloadCopyPasswordEl) {
-    downloadCopyPasswordEl.hidden = !pendingDownloadPassword;
-    downloadCopyPasswordEl.setAttribute("data-copy", pendingDownloadPassword);
-  }
-  downloadModalEl.hidden = false;
-  var panel = downloadModalEl.querySelector(".modal__panel");
-  if (panel instanceof HTMLElement) panel.focus();
-}
-
-function closeDownloadModal() {
-  if (!downloadModalEl) return;
-  downloadModalEl.hidden = true;
-  pendingDownloadUrl = null;
-  pendingDownloadPassword = "gk0t";
-}
-
 // Init theme: auto by time only (18:00~7:00 = dark), no localStorage
 (function() {
   var hour = new Date().getHours();
@@ -124,7 +100,7 @@ function closeDownloadModal() {
 
 // Theme toggle button
 if (themeToggleEl) {
-  themeToggleEl.addEventListener("click", function(e) {
+  themeToggleEl.addEventListener("click", function() {
     var rect = themeToggleEl.getBoundingClientRect();
     var originX = rect.left + rect.width / 2;
     var originY = rect.top + rect.height / 2;
@@ -133,44 +109,17 @@ if (themeToggleEl) {
   });
 }
 
-// Download proceed
-if (downloadProceedEl) {
-  downloadProceedEl.addEventListener("click", function() {
-    if (!pendingDownloadUrl) return;
-    window.open(pendingDownloadUrl, "_blank", "noreferrer");
-    closeDownloadModal();
-  });
-}
-
 // Global click delegation
 document.addEventListener("click", async function(e) {
   var target = e.target;
   if (!(target instanceof HTMLElement)) return;
-
-  if (target.matches("[data-download]")) {
-    var url = target.getAttribute("href");
-    var password = target.getAttribute("data-password") || "";
-    if (url) { e.preventDefault(); openDownloadModal(url, password); }
-    return;
-  }
-
-  if (target.matches("[data-modal-close]")) {
-    closeDownloadModal();
-    return;
-  }
 
   var copyValue = target.getAttribute("data-copy");
   if (!copyValue) return;
   try {
     var ok = await copyText(copyValue);
     showToast(ok ? "已复制" : "复制失败");
-  } catch(e) {
+  } catch {
     showToast("复制失败");
   }
-});
-
-document.addEventListener("keydown", function(e) {
-  if (e.key !== "Escape") return;
-  if (!downloadModalEl || downloadModalEl.hidden) return;
-  closeDownloadModal();
 });
