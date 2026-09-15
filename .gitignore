@@ -1,0 +1,12 @@
+# ── 本地工作目录（编辑器备份、项目记忆、验证脚本与截图）不上线 ──
+.workbuddy/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+
+# ── 系统 / 编辑器 ──
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

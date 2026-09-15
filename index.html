@@ -30,6 +30,10 @@
           <span class="brand__name">小栗子虚拟机</span>
         </a>
         <nav class="nav" aria-label="主导航">
+          <a class="nav__link" href="#features">核心特性</a>
+          <a class="nav__link" href="#api-support">API 兼容</a>
+          <a class="nav__link" href="#vm-download">下载</a>
+          <a class="nav__link" href="#links">相关链接</a>
           <button class="nav__btn" type="button" id="themeToggle" aria-pressed="false">暗色</button>
         </nav>
       </div>
@@ -47,6 +51,7 @@
             <div class="hero__actions">
               <a class="btn btn--ghost" href="#vm-download">下载虚拟机</a>
               <a class="btn btn--ghost" href="#sdk-download">下载SDK</a>
+              <a class="btn btn--ghost" href="#api-support">查看 API 兼容情况</a>
             </div>
             <p class="hero__note">
               小栗子虚拟机QQ交流群：936632212。
@@ -190,6 +195,71 @@
         </div>
       </section>
 
+      <section class="section" id="api-support">
+        <div class="container">
+          <h2 class="section__title">API 兼容情况</h2>
+          <p class="section__subtitle">
+            虚拟机的全部接口都通过本地 HTTP 服务以 <code>POST + JSON Body</code> 的方式调用，下方列出了每个接口在
+            萌尘 / Dulu / OneBot 等框架下的兼容状态、请求格式与参数说明。
+          </p>
+
+          <div class="api-conv">
+            <div class="api-conv__item">
+              <div class="api-conv__k">请求地址</div>
+              <div class="api-conv__v"><code>http://127.0.0.1:2081/</code></div>
+            </div>
+            <div class="api-conv__item">
+              <div class="api-conv__k">请求方式</div>
+              <div class="api-conv__v"><code>POST</code></div>
+            </div>
+            <div class="api-conv__item">
+              <div class="api-conv__k">Content-Type</div>
+              <div class="api-conv__v"><code>application/json</code></div>
+            </div>
+            <div class="api-conv__item">
+              <div class="api-conv__k">接口路由</div>
+              <div class="api-conv__v">Body 中的 <code>type</code> 即“接口类型”</div>
+            </div>
+          </div>
+
+          <div class="api-overview" id="apiOverview" aria-live="polite"></div>
+
+          <div class="api-toolbar">
+            <div class="api-tabs" id="apiFrameworkTabs" role="tablist" aria-label="框架筛选"></div>
+            <div class="api-toolbar__right">
+              <label class="api-field">
+                <span class="api-field__label">支持情况</span>
+                <select id="apiStatusFilter" class="api-input"></select>
+              </label>
+              <label class="api-field api-field--grow">
+                <span class="api-field__label">搜索</span>
+                <input
+                  id="apiSearch"
+                  class="api-input"
+                  type="search"
+                  placeholder="接口名称 / 接口类型 / 参数名"
+                  autocomplete="off"
+                />
+              </label>
+              <button class="btn btn--ghost" type="button" id="apiToggleAll">全部折叠</button>
+            </div>
+          </div>
+
+          <div class="api-legend" id="apiLegend"></div>
+
+          <div class="api-list" id="apiList"></div>
+
+          <div class="api-meta" id="apiMeta"></div>
+
+          <div class="hint">
+            <div class="hint__title">说明</div>
+            <div class="hint__text">
+              兼容情况随版本迭代持续更新，未特别标注的接口默认视为完全兼容。若某接口在特定框架下表现异常，欢迎在交流群反馈。
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="links">
         <div class="container">
           <h2 class="section__title">相关链接</h2>
@@ -258,6 +328,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./api-support.data.js"></script>
+    <script src="./api-support.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

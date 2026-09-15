@@ -1,0 +1,4198 @@
+{
+  "apifoxProject": "1.0.0",
+  "$schema": {
+    "app": "apifox",
+    "type": "project",
+    "version": "1.2.0"
+  },
+  "info": {
+    "name": "小栗子虚拟机",
+    "description": "",
+    "mockRule": {
+      "rules": [],
+      "enableSystemRule": true
+    }
+  },
+  "projectSetting": {
+    "id": "2785163",
+    "auth": {},
+    "securityScheme": {},
+    "gateway": [],
+    "language": "zh-CN",
+    "apiStatuses": [
+      "developing",
+      "testing",
+      "released",
+      "deprecated"
+    ],
+    "mockSettings": {},
+    "preProcessors": [],
+    "postProcessors": [],
+    "advancedSettings": {
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "isDefaultUrlEncoding": 2,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "publishedDocUrlRules": {
+        "defaultRule": "RESOURCE_KEY_ONLY",
+        "resourceKeyStandard": "LEGACY",
+        "enableResourceKeyStandard": true
+      }
+    },
+    "initialDisabledMockIds": [],
+    "servers": [
+      {
+        "id": "default",
+        "name": "默认服务",
+        "moduleId": 5215030
+      }
+    ],
+    "cloudMock": {
+      "enable": false,
+      "security": "free",
+      "tokenKey": "apifoxToken",
+      "isCreatedAutomaticallyByDefaultConfigFromAdmin": true
+    }
+  },
+  "apiCollection": [
+    {
+      "name": "根目录",
+      "id": 22520440,
+      "auth": {},
+      "securityScheme": {},
+      "parentId": 0,
+      "serverId": "",
+      "description": "",
+      "identityPattern": {
+        "httpApi": {
+          "type": "methodAndPath",
+          "bodyType": "",
+          "fields": []
+        }
+      },
+      "shareSettings": {},
+      "visibility": "SHARED",
+      "moduleId": 5215030,
+      "preProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "postProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "inheritPostProcessors": {},
+      "inheritPreProcessors": {},
+      "items": [
+        {
+          "name": "功能调用（虚拟机的请求）",
+          "id": 22520460,
+          "auth": {},
+          "securityScheme": {},
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5215030,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "取框架QQ",
+              "api": {
+                "id": "114271297",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "1",
+                      "enable": true,
+                      "name": "type"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "328953051",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"QQlist\\\":{\\\"3557471082\\\":{\\\"昵称\\\":\\\"小铃\\\",\\\"登录状态\\\":\\\"登录完毕\\\",\\\"等级信息\\\":\\\"NoVIP| 13| 223|2.0| 29\\\",\\\"收发信息\\\":\\\"11分47秒 收:0,发:0,速:0条/min\\\",\\\"登录IP\\\":\\\"58.19.85.37[本地登录]\\\",\\\"登录协议\\\":\\\"鸿蒙HD\\\",\\\"腾讯服务器\\\":\\\"111.206.149.168:80[所在地代码:tj]\\\"}}}\"\n}",
+                    "responseId": 328953051,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 20,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取群列表",
+              "api": {
+                "id": "114922034",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "4",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330253284",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330253284,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 25,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "发送好友消息",
+              "api": {
+                "id": "114265867",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "ryAt7OH8PF",
+                      "example": "2",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "c8Gh7E8ppL",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": true,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "aWJCA660ex",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "doe1twSkON",
+                      "example": "消息内容",
+                      "enable": true,
+                      "name": "msg_content"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "328943647",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"retcode\\\":0,\\\"retmsg\\\":\\\"\\\",\\\"time\\\":\\\"1696500021\\\"}\"\n}",
+                    "responseId": 328943647,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 10,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "发送群聊消息",
+              "api": {
+                "id": "114387794",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "guISIdVxnS",
+                      "example": "3",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "BBvaqzBLlo",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "1zrLGDwRlv",
+                      "example": "936632212",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "MmVuOiJge8",
+                      "example": "test",
+                      "enable": "true",
+                      "name": "msg_content",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "329152682",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 136,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "上传好友图片",
+              "api": {
+                "id": "114966483",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "5",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "图片",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "",
+                      "enable": true,
+                      "name": "picPath"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330343280",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330343280,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 27,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "上传群图片",
+              "api": {
+                "id": "114967366",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "6",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "图片",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "",
+                      "enable": true,
+                      "name": "picPath"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330344323",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330344323,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 39,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "群聊打卡",
+              "api": {
+                "id": "115207169",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "7",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330881712",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330881712,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 106,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "分享音乐",
+              "api": {
+                "id": "115211085",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "8",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "歌曲名",
+                      "type": "string",
+                      "id": "r6pRhpWUOH",
+                      "example": "",
+                      "enable": true,
+                      "name": "songName"
+                    },
+                    {
+                      "required": false,
+                      "description": "歌手名",
+                      "type": "string",
+                      "id": "0SOYSwjn2D",
+                      "example": "",
+                      "enable": true,
+                      "name": "singerName"
+                    },
+                    {
+                      "required": false,
+                      "description": "音乐跳转地址",
+                      "type": "string",
+                      "id": "4aXr8mlgxR",
+                      "example": "",
+                      "enable": true,
+                      "name": "musicLink_jump"
+                    },
+                    {
+                      "required": false,
+                      "description": "音乐封面地址",
+                      "type": "string",
+                      "id": "GE3Re7s9kB",
+                      "example": "",
+                      "enable": true,
+                      "name": "musicLink_pic"
+                    },
+                    {
+                      "required": false,
+                      "description": "音乐文件地址",
+                      "type": "string",
+                      "id": "8neK742tjH",
+                      "example": "",
+                      "enable": true,
+                      "name": "musicLink_file"
+                    },
+                    {
+                      "required": false,
+                      "description": "下标文字，0QQ音乐 1虾米音乐 2酷我音乐 3酷狗音乐 4网易云音乐",
+                      "type": "integer",
+                      "id": "8dRgz6Ud2k",
+                      "example": "0",
+                      "enable": true,
+                      "name": "appType"
+                    },
+                    {
+                      "required": false,
+                      "description": "0私聊 1群聊 2讨论组",
+                      "type": "integer",
+                      "id": "Aqu85MIZsz",
+                      "example": "1",
+                      "enable": true,
+                      "name": "sendType"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330897959",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330897959,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 130,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取好友文件下载地址",
+              "api": {
+                "id": "115219542",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "9",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "",
+                      "enable": true,
+                      "name": "fileId"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "",
+                      "enable": true,
+                      "name": "fileName"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "330920103",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 330920103,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 33,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "撤回消息_群聊",
+              "api": {
+                "id": "115279022",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "10",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "PC6AgUOcJ6",
+                      "example": "",
+                      "enable": true,
+                      "name": "fromRandom"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "MLdj5xTz2t",
+                      "example": "",
+                      "enable": true,
+                      "name": "fromReq"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "331025138",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 331025138,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 112,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "禁言群成员",
+              "api": {
+                "id": "115279585",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "11",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Dx8LXQGKF3",
+                      "example": "",
+                      "enable": true,
+                      "name": "GroupUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "被禁言QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "禁言时间秒 0解除禁言",
+                      "type": "string",
+                      "id": "MLdj5xTz2t",
+                      "example": "",
+                      "enable": "true",
+                      "name": "time",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "331025881",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 331025881,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 118,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "删除群成员",
+              "api": {
+                "id": "115288471",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "12",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Dx8LXQGKF3",
+                      "example": "",
+                      "enable": true,
+                      "name": "GroupUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "被禁言QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "拒绝加群申请 真或假",
+                      "type": "string",
+                      "id": "MLdj5xTz2t",
+                      "example": "",
+                      "enable": "true",
+                      "name": "isRefuseNext",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "331045828",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 331045828,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 124,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "上传群文件_废弃",
+              "api": {
+                "id": "118658760",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "13",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "本地文件路径",
+                      "type": "string",
+                      "id": "SJQ1I5p0Bs",
+                      "example": "",
+                      "enable": true,
+                      "name": "loaclPath"
+                    },
+                    {
+                      "required": false,
+                      "description": "群文件夹ID",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "",
+                      "enable": true,
+                      "name": "parentFolderId"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "31083030",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 31083030,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 42,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "处理好友验证事件",
+              "api": {
+                "id": "120283874",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "14",
+                      "enable": true,
+                      "name": "type"
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": true,
+                      "name": "myUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": true,
+                      "name": "hisUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "fromSeq",
+                      "type": "string",
+                      "id": "SJQ1I5p0Bs",
+                      "example": "",
+                      "enable": true,
+                      "name": "fromSeq"
+                    },
+                    {
+                      "required": false,
+                      "description": "1同意 2拒绝",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "1",
+                      "enable": true,
+                      "name": "op"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "341945354",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 341945354,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 43,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "处理群验证事件",
+              "api": {
+                "id": "121476761",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "15",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "8EaxbFCaya",
+                      "example": "",
+                      "enable": true,
+                      "name": "fromUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "fromSeq",
+                      "type": "string",
+                      "id": "SJQ1I5p0Bs",
+                      "example": "",
+                      "enable": "true",
+                      "name": "fromSeq",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "1同意 2拒绝",
+                      "type": "string",
+                      "id": "WTcbVo8Jst",
+                      "example": "1",
+                      "enable": "true",
+                      "name": "op",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "TB8CjjXjbD",
+                      "example": "",
+                      "enable": true,
+                      "name": "fromType",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "7FM186VGBQ",
+                      "example": "",
+                      "enable": true,
+                      "name": "reasonForRefusal",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "344449083",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 344449083,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 44,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取管理层列表",
+              "api": {
+                "id": "121477292",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "16",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "32329131",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 32329131,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 50,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取图片下载地址",
+              "api": {
+                "id": "121478946",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "17",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "eJFAM8tRHS",
+                      "example": "",
+                      "enable": true,
+                      "name": "picText",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "32329935",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 32329935,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 53,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "强制取昵称",
+              "api": {
+                "id": "121479824",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "18",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "344454760",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 344454760,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 54,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "全群禁言",
+              "api": {
+                "id": "135294420",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "19",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "好友QQ",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "真或假",
+                      "type": "string",
+                      "id": "sJ04sNtvwW",
+                      "example": "",
+                      "enable": true,
+                      "name": "state"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "373491267",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 373491267,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 55,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取群成员列表",
+              "api": {
+                "id": "135297063",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "20",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "38012426",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 38012426,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 61,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "QQ点赞",
+              "api": {
+                "id": "166960712",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "21",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "436614128",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 436614128,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 64,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取群名片",
+              "api": {
+                "id": "209084410",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "22",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "929315476",
+                      "enable": true,
+                      "name": "GroupUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群成员",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 65,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "提取图片文字",
+              "api": {
+                "id": "243482737",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "23",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "3557471082",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "",
+                      "enable": true,
+                      "name": "picText"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "583261433",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 583261433,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 88,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": null,
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取昵称_从缓存",
+              "api": {
+                "id": "352968015",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "24",
+                      "enable": true,
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": true,
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "对方QQ",
+                      "type": "string",
+                      "id": "and9RthM2y",
+                      "example": "936632212",
+                      "enable": true,
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "773749660",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 773749660,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 100,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "发送群临时消息",
+              "api": {
+                "id": "352944005",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "25",
+                      "enable": true,
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": true,
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "936632212",
+                      "enable": true,
+                      "name": "groupUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "对方QQ",
+                      "type": "string",
+                      "id": "and9RthM2y",
+                      "example": "936632212",
+                      "enable": true,
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "fHCjH8GpuX",
+                      "example": "test",
+                      "enable": true,
+                      "name": "msg_content",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "773723437",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 773723437,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 94,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {
+                  "328943569": false,
+                  "328943570": false
+                },
+                "responseChildren": [
+                  "BLANK.773723437"
+                ],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "发送群Json消息",
+              "api": {
+                "id": "376262950",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "guISIdVxnS",
+                      "example": "26",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "BBvaqzBLlo",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "1zrLGDwRlv",
+                      "example": "936632212",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "MmVuOiJge8",
+                      "example": "{}",
+                      "enable": "true",
+                      "name": "msg_content",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "329152682",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 142,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "上传语音_通用",
+              "api": {
+                "id": "376548375",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "guISIdVxnS",
+                      "example": "27",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "BBvaqzBLlo",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "MmVuOiJge8",
+                      "example": "",
+                      "enable": "true",
+                      "name": "record",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "329152682",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 154,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "上传群文件",
+              "api": {
+                "id": "376645921",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "guISIdVxnS",
+                      "example": "28",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "BBvaqzBLlo",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "1zrLGDwRlv",
+                      "example": "936632212",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": true,
+                      "description": "发送内容",
+                      "type": "string",
+                      "id": "MmVuOiJge8",
+                      "example": "{}",
+                      "enable": "true",
+                      "name": "file",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "o4CYIvZ4y0",
+                      "enable": true,
+                      "name": "name",
+                      "example": "文件名"
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "M13WDQz9vL",
+                      "enable": true,
+                      "name": "folder_id",
+                      "example": "上传目录"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "329152682",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 148,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "设置群名片",
+              "api": {
+                "id": "418759318",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "29",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "929315476",
+                      "enable": true,
+                      "name": "GroupUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群成员",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "3553142133",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "",
+                      "type": "string",
+                      "id": "kFEtTLOfsq",
+                      "enable": true,
+                      "name": "newCard",
+                      "example": "测试"
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 71,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "调用指定OneBot接口",
+              "api": {
+                "id": "418812188",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "30",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "{}",
+                      "enable": true,
+                      "name": "data"
+                    },
+                    {
+                      "required": false,
+                      "description": "群成员",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "false",
+                      "enable": "true",
+                      "name": "noWait",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 74,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取群成员信息",
+              "api": {
+                "id": "418885109",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "31",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "群号",
+                      "type": "string",
+                      "id": "tfc4a46gzG",
+                      "example": "",
+                      "enable": true,
+                      "name": "GroupUin"
+                    },
+                    {
+                      "required": false,
+                      "description": "群成员",
+                      "type": "string",
+                      "id": "Bkyf923yDN",
+                      "example": "",
+                      "enable": "true",
+                      "name": "hisUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 75,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "创建网络文件路径",
+              "api": {
+                "id": "431583162",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "32",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 76,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "取当前OneBot客户端类型",
+              "api": {
+                "id": "431583794",
+                "method": "get",
+                "path": "http://127.0.0.1:2081/",
+                "parameters": {
+                  "query": [
+                    {
+                      "required": true,
+                      "description": "接口类型",
+                      "type": "integer",
+                      "id": "QUMwst7dSv",
+                      "example": "33",
+                      "enable": "true",
+                      "name": "type",
+                      "fixedValue": false
+                    },
+                    {
+                      "required": false,
+                      "description": "框架QQ",
+                      "type": "string",
+                      "id": "9q1UFTJVGM",
+                      "example": "109895862",
+                      "enable": "true",
+                      "name": "myUin",
+                      "fixedValue": false
+                    }
+                  ]
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "518311477",
+                    "code": 200,
+                    "name": "成功",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "itemSchema": {},
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n    \"status\": 101,\n    \"data\": \"{\\\"list\\\":[{\\\"GroupUin\\\":\\\"596934495\\\",\\\"strGroupName\\\":\\\"光萌生产线\\\",\\\"dwMemberNum\\\":\\\"858\\\"},{\\\"GroupUin\\\":\\\"783901119\\\",\\\"strGroupName\\\":\\\"小铃铛、小叮噹·MadeSpa\\\",\\\"dwMemberNum\\\":\\\"3\\\"}]}\"\n}",
+                    "responseId": 518311477,
+                    "description": "",
+                    "oasKey": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 82,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5215030,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "socketCollection": [],
+  "docCollection": [],
+  "webSocketCollection": [],
+  "socketIOCollection": [],
+  "mcpClientCollection": [],
+  "responseCollection": [],
+  "schemaCollection": [],
+  "securitySchemeCollection": [],
+  "oasComponentCollection": [],
+  "requestCollection": [
+    {
+      "name": "根目录",
+      "children": [],
+      "ordering": [
+        "requestFolder.3476559"
+      ],
+      "items": []
+    }
+  ],
+  "environments": [],
+  "commonScripts": [],
+  "globalVariables": [],
+  "commonParameters": null,
+  "customFunctions": [],
+  "projectTestCaseCategories": [
+    {
+      "id": 2362392,
+      "name": "正向",
+      "description": null
+    },
+    {
+      "id": 2362393,
+      "name": "负向",
+      "description": null
+    },
+    {
+      "id": 2362394,
+      "name": "边界值",
+      "description": null
+    },
+    {
+      "id": 2362395,
+      "name": "安全性",
+      "description": null
+    },
+    {
+      "id": 2362396,
+      "name": "其他",
+      "description": null
+    }
+  ],
+  "projectTestCaseTags": [
+    {
+      "id": 38604017,
+      "name": "仅传必要字段",
+      "description": "仅发送具有有效值的必填字段,省略所有可选字段,以测试最小有效请求。"
+    },
+    {
+      "id": 38604018,
+      "name": "语义合法",
+      "description": "使用语法正确且在业务逻辑或域上下文中也有意义的值。"
+    },
+    {
+      "id": 38604019,
+      "name": "覆盖枚举组合",
+      "description": "对所有枚举型参数,应用正交设计系统地构建参数及其枚举值的测试用例组合,专用于测试枚举覆盖率"
+    },
+    {
+      "id": 38604020,
+      "name": "其他正向",
+      "description": "提供符合API规范的真实有效的输入,产生正确和预期的结果。"
+    },
+    {
+      "id": 38604021,
+      "name": "缺失必填字段",
+      "description": "在请求主体或参数中省略一个或多个必需字段。"
+    },
+    {
+      "id": 38604022,
+      "name": "无效值",
+      "description": "提供的值类型和格式正确,但在逻辑上对该字段无效。"
+    },
+    {
+      "id": 38604023,
+      "name": "类型错误",
+      "description": "使用数据类型不正确的值,例如发送字符串而不是整数。"
+    },
+    {
+      "id": 38604024,
+      "name": "格式错误",
+      "description": "以不正确的格式提供值,例如,错误的日期模式,格式错误的电子邮件地址。"
+    },
+    {
+      "id": 38604025,
+      "name": "语义非法",
+      "description": "使用语法正确且格式正确的值,这些值在逻辑上不可能或违反域规则。"
+    },
+    {
+      "id": 38604026,
+      "name": "其他负向",
+      "description": "提供无效或意外的输入,应触发错误处理或拒绝API。"
+    },
+    {
+      "id": 38604027,
+      "name": "Null",
+      "description": "必须是 JSON 字面量 `null`(不是空的,也不是 \"null\")。"
+    },
+    {
+      "id": 38604028,
+      "name": "零值",
+      "description": "必须是数字字面值0。"
+    },
+    {
+      "id": 38604029,
+      "name": "空值",
+      "description": "必须是\"\"。"
+    },
+    {
+      "id": 38604030,
+      "name": "极大值",
+      "description": "Max/min值 - 为数字或日期字段提供精确的最小值和最大值。"
+    },
+    {
+      "id": 38604031,
+      "name": "极小值",
+      "description": "Max/min值 - 为数字或日期字段提供精确的最小值和最大值。"
+    },
+    {
+      "id": 38604032,
+      "name": "超出最大边界值",
+      "description": "过长/过短字符串 - 提供超出允许的最小或最大边界的值。"
+    },
+    {
+      "id": 38604033,
+      "name": "超出最小边界值",
+      "description": "过长/过短字符串 - 提供超出允许的最小或最大边界的值。"
+    },
+    {
+      "id": 38604034,
+      "name": "字符串过长",
+      "description": "超出范围的值 - 提供大于允许的最大长度或小于要求的最小长度的字符串。"
+    },
+    {
+      "id": 38604035,
+      "name": "字符串过短",
+      "description": "超出范围的值 - 提供大于允许的最大长度或小于要求的最小长度的字符串。"
+    },
+    {
+      "id": 38604036,
+      "name": "对象级别授权缺失",
+      "description": "对象级别授权缺失 - 用户在没有适当授权的情况下访问或操作数据对象。"
+    },
+    {
+      "id": 38604037,
+      "name": "访问控制",
+      "description": "基于角色、权限或属性来限制用户能访问哪些资源、能执行哪些操作"
+    },
+    {
+      "id": 38604038,
+      "name": "认证失败",
+      "description": "认证失败 - 认证薄弱、配置错误或被绕过,导致未授权访问。"
+    },
+    {
+      "id": 38604039,
+      "name": "SQL注入",
+      "description": "在输入字段中插入恶意SQL代码,测试是否存在SQL注入漏洞。"
+    },
+    {
+      "id": 38604040,
+      "name": "XSS注入",
+      "description": "注入JavaScript或HTML标签来测试跨站点脚本漏洞。"
+    },
+    {
+      "id": 38604041,
+      "name": "模糊输入",
+      "description": "发送大型或随机生成的有效载荷,以测试输入的有效性和稳定性。"
+    },
+    {
+      "id": 38604042,
+      "name": "命令行注入",
+      "description": "将shell命令插入输入以测试命令执行漏洞。"
+    },
+    {
+      "id": 38604043,
+      "name": "JSON注入",
+      "description": "插入恶意或意外的JSON结构来测试解析和验证。"
+    },
+    {
+      "id": 38604044,
+      "name": "NoSQL注入",
+      "description": "提供NoSQL特定的恶意查询或操作符来测试注入漏洞。"
+    },
+    {
+      "id": 38604045,
+      "name": "其他",
+      "description": "其他未归属的测试用例。"
+    }
+  ],
+  "projectAssociations": [],
+  "moduleSettings": [
+    {
+      "id": "5215030",
+      "name": "默认模块",
+      "description": "",
+      "moduleVariables": [],
+      "openApiInfo": {}
+    }
+  ]
+}
